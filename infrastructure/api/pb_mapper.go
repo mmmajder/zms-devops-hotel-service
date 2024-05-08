@@ -1,8 +1,8 @@
 package api
 
 import (
-	"github.com/mmmajder/devops-booking-service/domain"
-	pb "github.com/mmmajder/devops-booking-service/proto"
+	"github.com/mmmajder/zms-devops-hotel-service/domain"
+	pb "github.com/mmmajder/zms-devops-hotel-service/proto"
 )
 
 func mapHotel(hotel *domain.Hotel) *pb.Hotel {

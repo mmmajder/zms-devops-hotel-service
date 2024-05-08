@@ -1,8 +1,8 @@
 syntax = "proto3";
 
-option go_package = "proto/booking";
+option go_package = "proto/hotel";
 
-package booking;
+package hotel;
 
 
 service BookingService{

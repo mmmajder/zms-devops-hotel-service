@@ -1,4 +1,4 @@
-module github.com/mmmajder/devops-booking-service
+module github.com/mmmajder/zms-devops-hotel-service
 
 go 1.17
 

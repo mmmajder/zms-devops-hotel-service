@@ -2,8 +2,8 @@ package api
 
 import (
 	"context"
-	"github.com/mmmajder/devops-booking-service/application"
-	pb "github.com/mmmajder/devops-booking-service/proto"
+	"github.com/mmmajder/zms-devops-hotel-service/application"
+	pb "github.com/mmmajder/zms-devops-hotel-service/proto"
 	"go.mongodb.org/mongo-driver/bson/primitive"
 )
 

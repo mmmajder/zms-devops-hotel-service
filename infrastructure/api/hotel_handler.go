@@ -5,9 +5,9 @@ import (
 	"fmt"
 	"github.com/go-playground/validator/v10"
 	"github.com/grpc-ecosystem/grpc-gateway/v2/runtime"
-	"github.com/mmmajder/devops-booking-service/application"
-	"github.com/mmmajder/devops-booking-service/domain"
-	"github.com/mmmajder/devops-booking-service/infrastructure/dto"
+	"github.com/mmmajder/zms-devops-hotel-service/application"
+	"github.com/mmmajder/zms-devops-hotel-service/domain"
+	"github.com/mmmajder/zms-devops-hotel-service/infrastructure/dto"
 	"go.mongodb.org/mongo-driver/bson/primitive"
 	"net/http"
 )
@@ -33,12 +33,12 @@ func NewHotelHandler(service *application.HotelService, mux *runtime.ServeMux) *
 }
 
 func (handler *HotelHandler) Init(mux *runtime.ServeMux) {
-	err := mux.HandlePath("GET", "/booking/hotels", handler.GetDetails)
-	err = mux.HandlePath("GET", "/booking/hotels/{id}", handler.GetById)
-	err = mux.HandlePath("POST", "/booking/hotels", handler.AddHotel)
-	err = mux.HandlePath("PUT", "/booking/hotels/{id}", handler.UpdateHotel)
-	err = mux.HandlePath("DELETE", "/booking/hotels/{id}", handler.DeleteHotel)
-	err = mux.HandlePath("GET", "/booking", handler.GetHealthCheck)
+	err := mux.HandlePath("GET", "/hotel/hotels", handler.GetDetails)
+	err = mux.HandlePath("GET", "/hotel/hotels/{id}", handler.GetById)
+	err = mux.HandlePath("POST", "/hotel/hotels", handler.AddHotel)
+	err = mux.HandlePath("PUT", "/hotel/hotels/{id}", handler.UpdateHotel)
+	err = mux.HandlePath("DELETE", "/hotel/hotels/{id}", handler.DeleteHotel)
+	err = mux.HandlePath("GET", "/hotel", handler.GetHealthCheck)
 	if err != nil {
 		panic(err)
 	}

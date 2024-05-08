@@ -1,7 +1,7 @@
 package application
 
 import (
-	"github.com/mmmajder/devops-booking-service/domain"
+	"github.com/mmmajder/zms-devops-hotel-service/domain"
 	"go.mongodb.org/mongo-driver/bson/primitive"
 )
 
